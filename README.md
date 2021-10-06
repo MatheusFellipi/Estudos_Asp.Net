@@ -109,3 +109,29 @@ o c# tem o tipo de variáveis forte
   - -
   - *
   - /
+
+# ActionResults               
+  ## Type                     Helper Method
+  - viewResult                View()
+  - PartialViweResult         PartialView()
+  - ContentResult             Content()  
+  - RedirectResult            Redirect()
+  - RedirectToRouteResult     RedirectToAction()
+  - JsonResult                Json()
+  - FileResult                File()
+  - HttpNotFoundResult        HttpNotFound()
+  - EmpptyResult  
+ 
+# Criando Rotas 
+
+```
+// no controler acima do metodo
+   [Route("caminho/{id}/{nome}")]
+ 
+ ou
+ 
+ //Route Config
+ routes.MapRoute("minhaPrimeiraRotar",
+ "editarPlanos/{planoid}/{nome}",
+ new { controller = "Plano", action = "Edit" });
+```
